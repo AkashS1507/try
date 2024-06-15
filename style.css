@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(to bottom right,#fbb9b4,#ffa39b,#fda69a,#fbbf9a,#fcb968,#fdc539);
+    background-repeat: no-repeat;
+}
+
+.nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left p {
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.nav-right {
+    margin-right: 50px;
+}
+.nav-right ul {
+    display: flex;
+}
+.nav-right ul li {
+    margin: 0 15px;
+    list-style: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.main {
+    display: flex;
+    height: 90vh;
+    margin: 0 50px;
+}
+
+.main-left {
+    width: 50%;
+    /* border: 2px solid black; */
+}
+.main-right {
+    width: 50%;
+    /* border: 2px solid black; */
+}
+h1 {
+    margin-top: 100px;
+    font-size: 70px;
+    color: rgb(253, 253, 253);
+    margin-bottom: 0px;
+}
+p {
+    color: white;
+    font-size: 1.25rem;
+}
+button {
+    background-color: red;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 5px;
+    padding: 13px 40px;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.straw {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+}
+.straw img {
+    width: 100%;
+}
+#s1 {
+    left: 69%;
+    transform: rotate(-18deg);
+    animation: spin1 5.8s ease-in-out infinite alternate;
+}
+#s2 {
+    left: 50%;
+    top: 28%;
+    transform: rotate(18deg);
+    animation: spin2 6s ease-in-out infinite alternate;
+}
+#s3 {
+    left: 65%;
+    top: 69%;
+    transform: rotate(-20deg);
+    animation: spin3 8s ease-in-out infinite alternate;
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(-18deg);
+    }
+}
+@keyframes spin2 {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(18deg);
+    }
+}
+@keyframes spin3 {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+#strawberry {
+    margin-left: 15px;
+    margin-top: -6px;
+    width: 320px;
+    height: 300px;
+    /* width: 120px;
+    height: 100px; */
+    position: absolute;
+    left: 21%;
+    z-index: -1;
+    top: 18%;
+}
+#strawberry img {
+    width: 100%;
+    opacity: 0.2;
+    /* opacity: 0.7; */
+}
